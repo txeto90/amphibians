@@ -1,0 +1,12 @@
+<h4 class=".ion-text-start" (click)="toggleAccordion()" [ngClass]="this.isMenuOpen ? 'open' : 'closed'">
+  {{ name }}
+  <span *ngIf="isMenuOpen">
+    <ion-icon name="chevron-down-outline"></ion-icon>
+  </span>
+  <span *ngIf="!isMenuOpen">
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </span>
+</h4>
+<div [ngClass]="this.isMenuOpen ? 'active' : 'inactive'">
+  <p [innerHTML]="description"></p>
+</div>

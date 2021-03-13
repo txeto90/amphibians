@@ -1,0 +1,20 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-searchbar class="ion-margin-top" mode="ios" (ionChange)="search($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item  *ngFor="let item of items | filter:searchText:'nomVulgar'"  [routerLink]="['/home', item.id]">
+      <ion-avatar slot="start">
+        <ion-img [src]="item.imgUrl"></ion-img>
+      </ion-avatar>
+      <div>
+        <ion-label>{{ item.nomVulgar }}</ion-label>
+        <ion-label class="subtitle">{{ item.nomCientific }}</ion-label>
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

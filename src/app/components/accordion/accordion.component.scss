@@ -1,0 +1,54 @@
+h4 {
+    cursor: pointer;
+    position: relative;
+    //padding: .7rem 0;
+    padding-left: 1rem;
+    border-bottom: .5px solid rgba(var(--ion-color-black-rgb), .2);
+    margin: 0;
+    text-align: left;
+    //font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    font-style: normal;
+
+    /* Define the style rules for the 'arrow icons' */
+    span {
+        position: absolute;
+        right: 1rem;
+        color: var(--ion-color-medium);
+    }
+
+    &.open {
+        color: green;
+        text-decoration: underline;
+        span {
+            color: green
+        }
+    }
+}
+
+p {
+    line-height: 1.4rem;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--ion-color-medium);
+    text-align: left;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+div {
+    position: relative;
+    padding: 1rem 0;
+}
+
+/* Following classes display/hide the 'menu'
+// based on the state change detection in the
+// component class */
+.active {
+    display: block
+}
+
+.inactive {
+    display: none;
+}

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-back-button ></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center"> {{item.nomVulgar}} </ion-title>
+    <ion-title class="ion-text-center subtitle"> {{item.nomCientific}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+
+  <ion-img [src]="item.imgUrl" class="ion-no-padding"></ion-img>
+  <app-accordion class="ion-text-center ion-padding" name="Descripción" description="{{item.descripcio}}"></app-accordion>
+  <app-accordion class="ion-text-center ion-padding" name="Hábitat" description="{{item.habitat}}"></app-accordion>
+  <app-accordion class="ion-text-center ion-padding" name="Distribución" description="{{item.imgDistri}}"></app-accordion>
+  <app-accordion *ngIf="item.conservacio" class="ion-text-center ion-padding" name="Conservación" description="{{item.conservacio}}"></app-accordion>
+
+</ion-content>
