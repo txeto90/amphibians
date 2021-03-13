@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/V3YL5kb/anfibios.png" width="50px" height="50px">
+<img src="https://i.ibb.co/V3YL5kb/anfibios.png" width="80px" height="80px">
 
 # Amphibians
 
@@ -16,5 +16,4 @@
 - Clone this repository to your local machine using `https://github.com/txeto90/amphibians.git`
 
 ### Screenshots
-<img src="https://i.ibb.co/vhKZGWM/Captura.png" width="250px" alt="cap1" />
-<img src="https://i.ibb.co/QFZFj7N/Captura2.png" width="250px" alt="cap2" />
+<img src="https://i.ibb.co/vhKZGWM/Captura.png" width="250px" alt="cap1" />   <img src="https://i.ibb.co/QFZFj7N/Captura2.png" width="250px" alt="cap2" />
